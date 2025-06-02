@@ -4,90 +4,96 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>HTML Assignment 3</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        table.middle {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table.middle td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+        .green-row {
+            background-color: green;
+            color: white;
+        }
+        .blue-row {
+            background-color: blue;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1 style="text-align: center;">HTML Assignment #3</h1>
-	<table border="1" class="middle" id="table-1" style="border: 1px solid black; border-spacing: 1px;">
-		<tr id="t11" style="padding: 1px;">
-			<td>left</td>
-			<td class="center">center</td>
-			<td class="right">right</td>
-		</tr>
-		<tr class="center" id="t12" style="padding: 1px;">
-			<td>left</td>
-			<td class="center">center</td>
-			<td class="right">right</td>
-		</tr>
-		<tr id="t13" style="padding: 1px;">
-			<td>left</td>
-			<td class="center">center</td>
-			<td class="right">right</td>
-		</tr>
-	</table>
-	<br>
+	<h1 class="center">HTML Assignment #3</h1>
 
-	<table border="1" class="middle" id="table-2" style="border: 1px solid black; border-spacing: 1px;">
-		<tr id="t21" colspan="6" style="padding: 1px;">
-			<td id="t21" colspan="6">1</td>
-		</tr>
-		<tr style="padding: 1px;">
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr style="padding: 1px;">
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr style="padding: 1px;">
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr style="padding: 1px;">
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr style="padding: 1px;">
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-	</table>
-	<br>
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Row 1, Col 1</td>
+            <td id="t12">Row 1, Col 2</td>
+            <td id="t13" class="right">Row 1, Col 3</td>
+        </tr>
+        <tr class="center">
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+            <td class="right">Row 2, Col 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Col 1</td>
+            <td>Row 3, Col 2</td>
+            <td class="right">Row 3, Col 3</td>
+        </tr>
+    </table>
 
-	<table id="table-3" class="middle" style="border: 1px solid black; border-spacing: 1px;">
-    <tr style="background-color: green;">
-      <td colspan="3" style="border: 1px solid black; padding: 1px;">Green Row 1</td>
-    </tr>
-    <tr>
-      <td colspan="3" id="t-image" style="border: 1px solid black; padding: 1px;">
-        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball">
-      </td>
-    </tr>
-    <tr style="background-color: blue;">
-      <td colspan="3" style="border: 1px solid black; padding: 1px;">Blue Row 3</td>
-    </tr>
-  </table>
+    <br>
+
+	<table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">Row 1 - Single Cell with Colspan 6</td>
+        </tr>
+        <tr>
+            <td>2,1</td><td>2,2</td><td>2,3</td><td>2,4</td><td>2,5</td><td>2,6</td>
+        </tr>
+        <tr>
+            <td>3,1</td><td>3,2</td><td>3,3</td><td>3,4</td><td>3,5</td><td>3,6</td>
+        </tr>
+        <tr>
+            <td>4,1</td><td>4,2</td><td>4,3</td><td>4,4</td><td>4,5</td><td>4,6</td>
+        </tr>
+        <tr>
+            <td>5,1</td><td>5,2</td><td>5,3</td><td>5,4</td><td>5,5</td><td>5,6</td>
+        </tr>
+        <tr>
+            <td>6,1</td><td>6,2</td><td>6,3</td><td>6,4</td><td>6,5</td><td>6,6</td>
+        </tr>
+    </table>
+
+    <br>
+
+	<table id="table-3" class="middle">
+        <tr class="green-row">
+            <td colspan="3">Header Row - Green Background</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td id="t-image">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball" width="100">
+            </td>
+            <td>Cell 3</td>
+        </tr>
+        <tr class="blue-row">
+            <td colspan="3">Footer Row - Blue Background</td>
+        </tr>
+    </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
